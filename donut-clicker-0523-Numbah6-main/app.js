@@ -1,6 +1,6 @@
 // Iteration 1 //
 
-let donutCount = 100;
+let donutCount = 0;
 let autoClickerCount = 1;
 let autoClickerCost = 100;
 let taxIncrease = 0.1;
@@ -15,6 +15,11 @@ let button= document.getElementById('buyAutoOven')
 function addDonut(){
     countOfClick.innerText = Math.floor(donutCount);
     displayDonut.innerText = Math.floor(donutCount++);
+    if(donutCount < autoClickerCost){
+        button.disabled= true;
+    } else {
+        button.disabled = false;
+    }
 }
 
 button.disabled= true;
