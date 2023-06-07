@@ -1,6 +1,19 @@
 /* General */
 body {
-    background-color: beige;
+    background-image: url('./assets/images/4afae2fd1de5e74aede82592625977e1.jpg');
+}
+
+p {
+    color: rgb(70, 154, 182);
+    font-size: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
 }
 
 /* About Us Button*/
@@ -77,8 +90,9 @@ body {
     justify-content: space-between;
 }*/
 
-.clicker {
+.bake {
     position: relative;
     float: none;
-    display: none;
+    display: block;
+    margin: 30px;
 }

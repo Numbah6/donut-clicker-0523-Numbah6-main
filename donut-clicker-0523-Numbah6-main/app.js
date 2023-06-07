@@ -8,7 +8,8 @@ let clickPriceNow = autoClickerCost;
 let displayDonut = document.getElementById('donutCount');
 let countOfClick = document.getElementById('clickCount');
 let displayAutoClickerCount = document.getElementById('autoClickerCount');
-let button= document.getElementById('buyAutoOven')
+let button= document.getElementById('buyAutoOven');
+let reset = document.getElementById('reset');
 
 
 
@@ -40,6 +41,12 @@ function buyAutoOven(){
         button.disabled = true;
     }
     document.getElementById('buyAutoOven').addEventListener('click', buyAutoOven);
+}
+
+/* Reset Button */
+
+function resetGame(){
+    document.getElementById('clicker').reset;
 }
 
 //document.getElementById('buyAutoOven').addEventListener('click', buyAutoOven);
