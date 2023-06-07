@@ -47,6 +47,8 @@ function buyAutoOven(){
 
 function resetGame(){
     document.getElementById('clicker').reset;
+    window.location.reload();
+    
 }
 
 //document.getElementById('buyAutoOven').addEventListener('click', buyAutoOven);
