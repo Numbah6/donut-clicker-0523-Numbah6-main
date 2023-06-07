@@ -16,7 +16,7 @@ let reset = document.getElementById('reset');
 function addDonut(){
     countOfClick.innerText = Math.floor(donutCount);
     displayDonut.innerText = Math.floor(donutCount++);
-    if(donutCount < autoClickerCost){
+    if(donutCount <= autoClickerCost){
         button.disabled= true;
     } else {
         button.disabled = false;
@@ -48,7 +48,7 @@ function buyAutoOven(){
 function resetGame(){
     document.getElementById('clicker').reset;
     window.location.reload();
-    
+
 }
 
 //document.getElementById('buyAutoOven').addEventListener('click', buyAutoOven);
